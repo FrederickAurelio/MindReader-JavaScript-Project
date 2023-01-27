@@ -33,7 +33,7 @@ main {
     cursor: pointer;
     border: none;
 }
-#exist-button:hover{
+#existbutton:hover{
     background-color: #1F5F8B;
 }
 #StartButton-container{
@@ -94,7 +94,7 @@ main {
     #exist-button:active{
         background-color: #1F5F8B;
     }
-    #exist-button:focus{
+    #existbutton:focus{
         outline: 0 !important;
     }
     #StartButton-container{

@@ -1,0 +1,97 @@
+@media (min-width: 761px){
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10px;
+}
+#contact h1{
+    font-size: 80px;
+    color: #253b6e;
+    margin: 0;
+    margin-bottom: 60px;
+}
+#contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#contact-container img{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 150px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    margin-right: 60px;
+}
+#contact-content-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+#contact-content i{
+    font-size: 24px;
+    margin-right: 10px;
+    color: #253b6e;
+}
+#contact-content a {
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #253b6e;
+}
+#contact-content a:hover {
+    color: #1F5F8B;
+}
+}
+
+@media (max-width: 760px){
+    #contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 10px;
+    }
+    #contact h1{
+        font-size: 50px;
+        color: #253b6e;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    #contact-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #contact-container img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 100px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        margin-right: 10px;
+    }
+    #contact-content-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+    }
+    #contact-content i{
+        font-size: 14px;
+        margin-right: 6px;
+        color: #253b6e;
+    }
+    #contact-content a {
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #253b6e;
+    }
+    #contact-content a:active {
+        color: #1F5F8B;
+    }
+    }

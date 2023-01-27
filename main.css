@@ -1,0 +1,123 @@
+@media (min-width: 761px){
+main {
+    display: flex;
+    justify-content: center;
+    padding: 160px 20px;
+    padding-bottom: 175px;
+}
+#main-content h1 {
+    color: #253B6E;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+#main-content p{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    max-width: 850px;
+    min-width: 760px;
+}
+#existbutton {
+    position: relative;
+    top: -8px;
+    background-color: #253B6E;
+    color: #D2ECF9;
+    font-weight: bold;
+    padding: 12px 20px;
+    font-size: 17px;
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+}
+#exist-button:hover{
+    background-color: #1F5F8B;
+}
+#StartButton-container{
+    text-align: center;
+    margin-top: 20px;
+}
+#StartButton{
+    background-color: #253B6E;
+    color: #D2ECF9;
+    font-weight: bold;
+    padding: 16px 30px;
+    font-size: 20px;
+    border-radius: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+}
+#StartButton:hover{
+    background-color: #1F5F8B;
+}
+}
+
+@media (max-width: 760px){
+    main {
+        display: grid;
+        grid-template-columns: 20px 1fr 20px;
+        padding: 120px 0px;
+    }
+    #main-content h1 {
+        color: #253B6E;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        min-width: 305px;
+        line-height: 47px;
+    }
+    #main-content p{
+        margin-top: 20px;
+        font-size: 22px;
+        text-align: center;
+        line-height: 32px;
+    }
+    #existbutton {
+        position: relative;
+        background-color: #253B6E;
+        color: #D2ECF9;
+        font-weight: bold;
+        padding: 10px 17px;
+        font-size: 16px;
+        border-radius: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+        border: none;
+    }
+    #exist-button:active{
+        background-color: #1F5F8B;
+    }
+    #exist-button:focus{
+        outline: 0 !important;
+    }
+    #StartButton-container{
+        text-align: center;
+        margin-top: 20px;
+        min-width: 305px;
+    }
+    #StartButton{
+        background-color: #253B6E;
+        color: #D2ECF9;
+        font-weight: bold;
+        padding: 16px 30px;
+        font-size: 20px;
+        border-radius: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+        border: none;
+    }
+    #StartButton:active{
+        background-color: #1F5F8B;
+    }
+    #StartButton:focus{
+        outline: none!important;
+    }
+}

@@ -1,0 +1,26 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial;
+    background-color: #eceff8;
+    padding-top: 70px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+button:focus{
+    outline: none !important;
+}
+#top{
+    position: absolute;
+    top: 0;
+}
+#how-link {
+    position: relative;
+    top: -61px;
+}

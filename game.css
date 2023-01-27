@@ -1,0 +1,290 @@
+@media (min-width : 761px){
+    #main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #button-container{
+        margin-top: 475px;
+    }
+    #card1, #card2, #card3, #card4, #card5, #card6, #card7 {
+        z-index: 9;
+        margin-top: 75px;
+        position: absolute;
+        opacity: 0;
+        transition : opacity 0.5s;
+        margin-right: 900px;
+    }
+    #content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #card-info {
+        position: relative;
+        font-size: 18px;
+        font-weight: 500;
+        color: #eceff8;
+        text-align: center;
+        top: 79px;
+        z-index: 11;
+    }
+    #card-container{
+        width: 400px;
+        height: 400px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+    #bezel-up, #bezel-down{
+        height: 30px;
+        background-color: #253B6E;
+        border: none;
+    }
+    #bezel-up{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    #bezel-down{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    #card-content{
+        width: 400px;
+        height: 340px;
+        display: grid;
+        grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+        text-align: center;
+        align-items: center;
+    }
+    #card-content div {
+        color: black;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    #card-content p{
+        color:rgba(0, 0, 0, 0.2);
+        font-size: 17px;
+    }
+    #existBtn{
+        background-color: #253B6E;
+        color: #D2ECF9;
+        font-weight: bold;
+        padding: 11px 18px;
+        font-size: 17px;
+        border-radius: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+        border: none;
+    }
+    #existBtn:hover{
+        background-color: #1F5F8B;
+    }
+    #nopeBtn{
+        background-color: #D2ECF9;
+        color: #253B6E;
+        font-weight: bold;
+        padding: 10px 17px;
+        font-size: 17px;
+        border-radius: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+        border: 2px solid #253B6E;
+    }
+    #nopeBtn:hover{
+        opacity: 0.7;
+    }
+    #end{
+        margin-top: 180px;
+        display: none;
+        opacity: 0;
+        transition: opacity 2s;
+        padding: 0px 30px;
+    }
+    #end h1 {
+        color: #253B6E;
+        font-size: 60px;
+        font-weight: 500;
+        text-align: center;
+        margin: 0;
+    }
+    #end p{
+        margin-top: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    #result {
+        color: #6e2525;
+        font-size: 60px;
+        font-weight: 700;
+    }
+    #BackButton-container{
+        text-align: center;
+        margin-top: 30px;
+    }
+    #BackButton{
+        background-color: #253B6E;
+        color: #D2ECF9;
+        font-weight: bold;
+        padding: 16px 30px;
+        font-size: 20px;
+        border-radius: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+        border: none;
+    }
+    #BackButton:hover{
+        background-color: #1F5F8B;
+    }
+}
+
+@media (max-width : 760px){
+    #main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #card1, #card2, #card3, #card4, #card5, #card6, #card7 {
+        grid-template-columns: 20px 1fr 20px;
+        margin-top: 80px;
+        position: absolute;
+        opacity: 0;
+        transition : opacity 0.5s;
+        margin-right: 500px;
+    }
+    #button-container{
+        margin-top: 390px;
+    }
+    #content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #card-info {
+        position: relative;
+        font-size: 18px;
+        font-weight: 500;
+        color: #eceff8;
+        text-align: center;
+        top: 85px;
+        z-index: 11;
+    }
+    #card-container{
+        width: 300px;
+        height: 300px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+    #bezel-up, #bezel-down{
+        height: 30px;
+        background-color: #253B6E;
+        border: none;
+    }
+    #bezel-up{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    #bezel-down{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    #card-content{
+        width: 300px;
+        height: 240px;
+        display: grid;
+        grid-template-columns: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+        text-align: center;
+        align-items: center;
+    }
+    #card-content div {
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    #card-content p{
+        color:rgba(0, 0, 0, 0.2);
+        font-size: 15px;
+    }
+    #existBtn{
+        background-color: #253B6E;
+        color: #D2ECF9;
+        font-weight: bold;
+        padding: 11px 18px;
+        font-size: 17px;
+        border-radius: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+        border: none;
+    }
+    #existBtn:active{
+        background-color: #1F5F8B;
+    }
+    #nopeBtn{
+        background-color: #D2ECF9;
+        color: #253B6E;
+        font-weight: bold;
+        padding: 10px 17px;
+        font-size: 17px;
+        border-radius: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+        border: 2px solid #253B6E;
+    }
+    #nopeBtn:active{
+        opacity: 0.7;
+    }
+    #end{
+        margin-top: 100px;
+        display: none;
+        opacity: 0;
+        transition: opacity 2s;
+        padding: 0px 20px;
+    }
+    #end h1 {
+        color: #253B6E;
+        font-size: 50px;
+        font-weight: 500;
+        text-align: center;
+        margin: 0;
+        min-width: 305px;
+        line-height: 46px;
+    }
+    #result {
+        color: #6e2525;
+        font-size: 50px;
+        font-weight: 700;
+    }
+    #end p{
+        margin-top: 20px;
+        font-size: 22px;
+        text-align: center;
+        line-height: 36px;
+        min-width: 305px;
+    }
+    #BackButton-container{
+        text-align: center;
+        margin-top: 20px;
+        min-width: 305px;
+    }
+    #BackButton{
+        background-color: #253B6E;
+        color: #D2ECF9;
+        font-weight: bold;
+        padding: 16px 30px;
+        font-size: 20px;
+        border-radius: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+        border: none;
+    }
+    #BackButton:active{
+        background-color: #1F5F8B;
+    }
+}

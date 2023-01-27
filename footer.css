@@ -1,0 +1,25 @@
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #253b6e;
+    height: 16px;
+    display: flex;
+    align-items: center;
+}
+#footer{
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #253b6e;
+    height: 16px;
+    display: flex;
+    align-items: center;
+}
+footer p {
+    font-size: 12px;
+    padding-left: 18px;
+    color: #15223f
+}

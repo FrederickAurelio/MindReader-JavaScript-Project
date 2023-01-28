@@ -94,9 +94,6 @@ main {
     #existbutton:active{
         background-color: #1F5F8B;
     }
-    #existbutton:focus{
-        outline: 0 !important;
-    }
     #StartButton-container{
         text-align: center;
         margin-top: 20px;

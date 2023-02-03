@@ -16,10 +16,6 @@ p {
     padding: 0;
 }
 
-button:focus {
-    outline: none !important;
-}
-
 #top {
     position: absolute;
     top: 0;

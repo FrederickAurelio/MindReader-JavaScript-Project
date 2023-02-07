@@ -29,9 +29,7 @@ document.getElementById("card-info").textContent = "Cards : " + count + "/7";
 function shuffle(array) {
   for (i = 0; i < array.length; i += 1) {
     let randomIndex = Math.floor(Math.random() * array.length);
-    let temporary = array[i];
-    array[i] = array[randomIndex];
-    array[randomIndex] = temporary;
+    [array[i], array[randomIndex]] = [array[randomIndex], array[i]];
   }
 }
 var mobile = window.matchMedia("(max-width: 760px)");

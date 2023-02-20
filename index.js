@@ -25,3 +25,35 @@ const hiddenElements = document.querySelectorAll(".how-container");
 hiddenElements.forEach(function (element) {
   MyObserver.observe(element);
 });
+
+// Scrolling
+const btnScroll = document.querySelectorAll(".scroll");
+
+btnScroll.forEach(function(btn){
+  btn.addEventListener("click", function(){
+    const scrollTo = btn.getAttribute("scrollTo");
+    const section = document.querySelector(`#${scrollTo}`);
+    const coord = section.getBoundingClientRect();
+
+    window.scrollTo({
+      top: coord.top + window.pageYOffset,
+      left: coord.left + window.pageXOffset,
+      behavior: "smooth",
+    });
+  });
+});
+
+window.addEventListener('load', function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const scrollTo = urlParams.get('scrollTo');
+  if (scrollTo) {
+    const section = document.querySelector(`#${scrollTo}`);
+    const coord = section.getBoundingClientRect();
+
+    window.scrollTo({
+      top: coord.top + window.pageYOffset,
+      left: coord.left + window.pageXOffset,
+      behavior: "smooth",
+    });
+  }
+});

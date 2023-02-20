@@ -1,4 +1,8 @@
 @media (min-width: 761px){
+    #how {
+        position: relative;
+        top: -60px;
+    }
     #howtoplay{
         border-bottom: solid 2px #253B6E;
     }
@@ -106,6 +110,10 @@
 }
 
 @media (max-width: 760px){
+    #how {
+        position: relative;
+        top: -60px;
+    }
     #howtoplay{
         border-bottom: solid 2px #253B6E;
     }

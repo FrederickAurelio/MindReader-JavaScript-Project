@@ -27,31 +27,12 @@ hiddenElements.forEach(function (element) {
 });
 
 // Scrolling
-const btnScroll = document.querySelectorAll(".scroll");
-
-btnScroll.forEach(function (btn) {
-  btn.addEventListener("click", function () {
-    const scrollTo = btn.getAttribute("scrollTo");
-    const section = document.querySelector(`#${scrollTo}`);
-    const coord = section.getBoundingClientRect();
-
-    window.scrollTo({
-      top: coord.top + window.pageYOffset,
-      left: coord.left + window.pageXOffset,
-      behavior: "smooth",
-    });
-  });
+document.querySelector("#header-menu").addEventListener("click", function(e){
+  if(e.target.classList.contains("scroll")){
+    const scrollTo = e.target.getAttribute("scrollTo");
+    document.querySelector(`#${scrollTo}`).scrollIntoView({behavior: "smooth"});
+  }
 });
 
 const urlParams = new URLSearchParams(window.location.search);
-const scrollTo = urlParams.get('scrollTo');
-if (scrollTo) {
-  const section = document.querySelector(`#${scrollTo}`);
-  const coord = section.getBoundingClientRect();
-
-  window.scrollTo({
-    top: coord.top + window.pageYOffset,
-    left: coord.left + window.pageXOffset,
-    behavior: "smooth",
-  });
-}
+document.querySelector(`#${urlParams.get("scrollTo")}`).scrollIntoView({behavior: "smooth"});

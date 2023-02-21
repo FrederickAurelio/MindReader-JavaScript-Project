@@ -28,11 +28,15 @@ hiddenElements.forEach(function (element) {
 
 // Scrolling
 document.querySelector("#header-menu").addEventListener("click", function(e){
-  if(e.target.classList.contains("scroll")){
-    const scrollTo = e.target.getAttribute("scrollTo");
+  const target = e.target.closest(".scroll")
+  if(target){
+    const scrollTo = target.getAttribute("scrollTo");
     document.querySelector(`#${scrollTo}`).scrollIntoView({behavior: "smooth"});
   }
 });
 
 const urlParams = new URLSearchParams(window.location.search);
-document.querySelector(`#${urlParams.get("scrollTo")}`).scrollIntoView({behavior: "smooth"});
+const id = urlParams.get("scrollTo");
+if(id){
+  document.querySelector(`#${id}`).scrollIntoView({behavior: "smooth"});
+}

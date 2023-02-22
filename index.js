@@ -1,4 +1,4 @@
-const MyObserver = new IntersectionObserver((entries) => {
+const obsCallback = (entries) => {
   entries.forEach(function (entry) {
     if (desktop.matches) {
       if (entry.isIntersecting) {
@@ -16,7 +16,11 @@ const MyObserver = new IntersectionObserver((entries) => {
       }
     }
   });
-});
+}
+const obsOptions = {
+  root: null,
+}
+const MyObserver = new IntersectionObserver(obsCallback, obsOptions);
 
 var mobile = window.matchMedia("(max-width: 760px)");
 var desktop = window.matchMedia("(min-width: 761px)");
